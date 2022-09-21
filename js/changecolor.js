@@ -17,7 +17,7 @@ btns.forEach((btn)=>{
             theme.style.setProperty('--colorBg-yellow', '#C2E5F8')
         }else{
             theme.style.setProperty('--color-yellow', '#FC9F2E')
-            theme.style.setProperty('--colorBg-yellow', '#FBDAB3')
+            theme.style.setProperty('--colorBg-yellow', '#FCECD9')
         }
     })
 })
