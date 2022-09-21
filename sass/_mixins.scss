@@ -1,0 +1,54 @@
+$color-yellow: #fbd739;
+$colorBg-yellow: #fcf5d6;
+$h1: 4.5em;
+$font: 18px;
+
+:root {
+  --color-yellow: #{$color-yellow};
+  --colorBg-yellow: #{$colorBg-yellow};
+}
+
+@mixin flex($flex-direction, $justify, $align) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin optionsBg {
+  display: flex;
+  font-size: $font;
+  cursor: pointer;
+}
+
+@mixin colors {
+  .color-yellow {
+    background-color: #fbd739;
+  }
+  .color-green {
+    background-color: #b0df30;
+  }
+  .color-blue {
+    background-color: #58c2fb;
+  }
+  .color-orange {
+    background-color: #fc9f2e;
+  }
+  .color-yellow.active {
+    border: solid 1px;
+  }
+  .color-green.active {
+    border: solid 1px;
+  }
+  .color-blue.active {
+    border: solid 1px;
+  }
+  .color-orange.active {
+    border: solid 1px;
+  }
+}

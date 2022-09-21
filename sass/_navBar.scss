@@ -1,0 +1,140 @@
+@use "mixins" as *;
+
+.header {
+  @include width-height(100%, auto);
+  position: fixed;
+  z-index: 15;
+  background-color: transparent;
+  @include flex(auto, space-between, center);
+  padding: 35px 4em;
+  z-index: 10;
+
+  &__logo {
+    @include flex(auto, center, center);
+    gap: 5px;
+    font-size: $font;
+  }
+
+  &__lista {
+    display: flex;
+    transition: all 0.3s linear;
+
+    li {
+      list-style: none;
+      @include flex(auto, auto, center);
+      @include optionsBg;
+      padding: 5px 10px;
+      border-radius: 10px;
+      gap: 15px;
+      background-color: var(--colorBg-yellow);
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      @include width-height(100%, 100vh);
+      position: absolute;
+      top: 0;
+      left: -100%;
+      background-color: var(--colorBg-yellow);
+      @include flex(column, center, center);
+      li {
+        margin: 20px 0;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: var(--color-yellow);
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__lista.open {
+    @media (max-width: 1000px) {
+      left: 0;
+      transition: all 0.3s linear;
+    }
+  }
+
+  &__options {
+    z-index: 10;
+    @include flex(auto, space-between, center);
+    padding: 5px 10px;
+    border-radius: 10px;
+    gap: 15px;
+    background-color: var(--colorBg-yellow);
+
+    #btn-color {
+      @include optionsBg;
+    }
+    .arrow.active {
+      transform: rotate(180deg);
+      transition: 0.3s;
+    }
+    .arrow {
+      transform: rotate(0deg);
+      transition: 0.3s;
+    }
+    .hamburguer {
+      display: none;
+      font-size: 20px;
+    }
+    @media (max-width: 1000px) {
+      background-color: var(--color-yellow);
+      .hamburguer {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__colors {
+    visibility: hidden;
+    position: absolute;
+    top: 5em;
+    right: 4em;
+    @include width-height(13em, auto);
+    @include flex(auto, space-evenly, auto);
+    padding: 5px 0;
+    border-radius: 10px;
+    background-color: var(--colorBg-yellow);
+
+    li {
+      border-radius: 50%;
+      @include width-height(35px, 35px);
+      list-style: none;
+      cursor: pointer;
+    }
+
+    @include colors;
+
+    @media (max-width:1000px) {
+      top: 3.5em;
+      right: 1em;
+      border: solid 2px var(--color-yellow);
+      @include width-height(6em, auto);
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  }
+
+  &__colors.active {
+    visibility: visible;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 15px 20px;
+
+    &__logo {
+      font-size: 15px;
+    }
+  }
+}
