@@ -6,7 +6,7 @@
   z-index: 15;
   background-color: transparent;
   @include flex(auto, space-between, center);
-  padding: 35px 4em;
+  padding: 35px 3.5em;
   z-index: 10;
 
   &__logo {
@@ -136,5 +136,14 @@
     &__logo {
       font-size: 15px;
     }
+  }
+}
+
+.header.stiky{
+  background-color: var(--color-yellow);
+  transition: 0.3s;
+
+  @media (max-width: 1000px) {
+    background-color: var(--colorBg-yellow);
   }
 }

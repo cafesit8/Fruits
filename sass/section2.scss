@@ -1,0 +1,88 @@
+@use 'mixins' as *;
+
+.section2{
+    padding-top: 100px;
+    width: 100%;
+    @include flex(column, center, center);
+
+    &__options{
+        @include width-height(40em, auto);
+        @include flex(row, space-evenly, center);
+
+        h4{
+            padding: 10px 25px;
+            border-radius: 30px;
+            background-color: var(--colorBg-yellow);
+            cursor: pointer;
+        }
+        h4.active{
+            border: solid 1px;
+        }
+        @media (max-width: 650px) {
+            width: 100%;
+
+            h4{
+                padding: 8px 12px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__content__total{
+        width: 100%;
+        @include flex(column, center, center);
+    }
+    &__juices,
+    &__extracts,
+    &__smoothies{
+        @include flex(auto, center, center);
+        display: none;
+        flex-wrap: wrap;
+        width: 70%;
+        padding: 40px 20px;
+        gap: 30px;
+
+        @media (max-width: 1250px) {
+            width: 100%;
+        }
+    }
+    &__juices.active,
+    &__extracts.active,
+    &__smoothies.active{
+        @include flex(auto, center, center);
+    }
+    &__img{
+        @include width-height(15em, 450px);
+        display: inline-block;
+        background-color: var(--colorBg-yellow);
+        border-radius: 10px;
+        overflow: hidden;
+
+        &__picture{
+            @include width-height(100%, 60%);
+            background-color: var(--colorBg-yellow);
+            position: relative;
+            overflow: hidden;
+
+            img{
+                @include width-height(100%, 100%);
+                object-fit: cover;
+            }
+        }
+        &__text{
+            @include width-height(100%, 40%);
+            text-align: center;
+            @include flex(column, center, center);
+            padding: 0 10px;
+            font-size: 15px;
+
+            fieldset{
+                border: none;
+                font-size: 16px;
+                font-weight: bolder;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

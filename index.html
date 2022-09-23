@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthy Fruits</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/section2.css">
     <link rel="icon" href="images/frutas.png">
     <script src="js/colors.js" defer></script>
     <script src="js/changecolor.js" defer></script>
     <script src="js/hamburguer.js" defer></script>
+    <script src="js/categories.js" defer></script>
+    <script src="js/header.js" defer></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
 <body>
-
     <header class="header">
         <div class="header__logo">
             <img src="images/frutas.png" alt="">
             Healthy Fruits
         </div>
         <ul class="header__lista">
-            <li class="animate__animated animate__flipInX animate__slow"><a href="#">Home</a></li>
-            <li class="animate__animated animate__flipInX animate__slow"><a href="#">Recipes</a></li>
-            <li class="animate__animated animate__flipInX animate__slow"><a href="#">About Us</a></li>
+            <li id="option" class="animate__animated animate__flipInX animate__slow"><a href="#">Home</a></li>
+            <li id="option" class="animate__animated animate__flipInX animate__slow"><a href="#section2">Recipes</a></li>
+            <li id="option" class="animate__animated animate__flipInX animate__slow"><a href="#">About Us</a></li>
         </ul>
         <div class="header__options animate__animated animate__flipInX animate__slow">
             <li id="btn-color"><ion-icon name="color-palette-outline"></ion-icon><ion-icon name="caret-down-outline" class="arrow"></ion-icon></li>
@@ -50,6 +52,183 @@
         <img class="section1__img section1__img1" src="images/fruit.png" alt="">
         <img class="section1__img section1__img2" src="images/fruit2.png" alt="">
         <img class="section1__img section1__img3" src="images/fruit3.png" alt="">
+    </section>
+    <section class="section2" id="section2">
+        <div class="section2__options">
+            <h4 id="section2__btn" class="active" >Juices</h4>
+            <h4 id="section2__btn">Extracts</h4>
+            <h4 id="section2__btn">Smoothies</h4>
+        </div>
+        <article class="section2__content__total">
+            <div id="sections" class="section2__juices active">
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/manaza.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Apple juice</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/batido-de-fresa-y-mango.jpg" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Strawberry and Mango</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/guayaba y naranja.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Guava and Orange</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/kiwi y platano.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Kiwi and Banana</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/naranja con durazno.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Orange with Peach</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/sndia y pepino.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Watermelon and Cucumber</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+            </div>
+            <div id="sections" class="section2__extracts">
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/Jugo-de-limón-perejil-y-espinaca.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>limon perejil y espinaca</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/pepino y alfalfa.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>pepino y alfalfa</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/betabel y naranaja.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>betabel y naranja</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/col y manzana.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>col y manzana</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/remolacha,zanahoria y manzana.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>remolacha zanahoria y manzana</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/pepino.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>pepino</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+            </div>
+            <div id="sections" class="section2__smoothies">
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/fresa con yougurt.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Strawberry with Yogurt</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/fresa,mango,lechecoco.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Strawberry, Mango and Coconut milk</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/aguacate.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Avocado</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/Batida-de-Mango-Coco-y-Pina-1.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Mango, Coconut and Pineapple</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/batidosfrutos rojos.png" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Red Fruit Smoothies</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+                <div class="section2__img">
+                    <div class="section2__img__picture">
+                        <img src="images/chocolate.jpg" alt="">
+                    </div>
+                    <div class="section2__img__text">
+                        <fieldset>Chocolate</fieldset>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  Provident, ullam minus. Mollitia harum reiciendis incidunt     veniam optio cumque quam non ea, amet</p>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
