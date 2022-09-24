@@ -232,6 +232,7 @@ body {
   align-items: center;
   padding: 35px 3.5em;
   z-index: 10;
+  transition: 0.3s;
 }
 .header__logo {
   display: flex;
